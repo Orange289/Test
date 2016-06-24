@@ -1,0 +1,48 @@
+.wrapper {
+  background-color: #ffffff;
+  font-family: "Arial";
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #818181;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #000000;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+@media (min-width: 700px) {
+
+  .container {
+    width: 620px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 940px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+}
