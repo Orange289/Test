@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Tестовое задание</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <div class="wrapper">
-    <body>
-      <div class="container">
-        <section class="howitworks slider">
-          <h1>Как это работает</h1>
-          <a class="howitworks__prev" href="#"></a>
-          <div class="howitworks__item slider__item">
-            <h2>Выберите номер телефона</h2>
-            <p class="hoitworks__descr">
+  <body>
+    <div class="container">
+      <section class="howitworks slider">
+        <h1>Как это работает</h1>
+        <label class="howitworks__prev" for="howitworks-input-1"></label>
+        <label class="howitworks__next" for="howitworks-input-2"></label>
+        <input class="slider__input" type="radio" name="howitworks" id="howitworks-input-1" checked>
+        <input class="slider__input" type="radio" name="howitworks" id="howitworks-input-2">
+        <div class="slider__toggles">
+          <label class="slider__toggle" for="howitworks-input-1">1</label>
+          <label class="slider__toggle" for="howitworks-input-2">2</label>
+        </div>
+        <div class="howitworks__items">
+          <div class="howitworks__item howitworks__item--phone slider__item">
+            <h2 class="howitworks__title howitworks__title--phone">Выберите номер телефона</h2>
+            <p class="howitworks__descr">
               Даже если вы работаете в одиночку и всегда принимаете заказы по мобильному телефону,
               ваши клиенты никогда не услышат сигнал «Занято» или «Абонент не отвечает».
               Яндекс.Телефония помещает входящие звонки в очередь,
@@ -23,22 +29,15 @@
               которое моментально отобразится в списке заданий.
             </p>
           </div>
-          <div class="howitworks__item slider__item">
-            <h2>Сделайте на сайте удобную форму обратной связи</h2>
-            <p class="hoitworks__descr">
+          <div class="howitworks__item howitworks__item--feedback slider__item">
+            <h2 class="howitworks__title howitworks__title--feedback">Сделайте на сайте удобную форму обратной связи</h2>
+            <p class="howitworks__descr">
               Пользователь быстрее выйдет с вами на связь и получит ответ на свой вопрос.
               Обращения, сделанные на сайте, отображаются в единой ленте вместе со звонками и упоминаниями в социальных сетях — их сложно пропустить.
             </p>
           </div>
-          <a class="howitworks__next" href="#"></a>
-          <input class="slider__input" type="radio" name="reviews" id="howitworks-input-1" checked>
-          <input class="slider__input" type="radio" name="reviews" id="howitworks-input-2">
-          <div class="howitworks__toggles slider__toggles">
-            <label class="howitworks__toggle" for="howitworks-input-1">1</label>
-            <label class="howitworks__toggle" for="howitworks-input-2">2</label>
-          </div>
-        </section>
-      </div>
-    </body>
-  </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
